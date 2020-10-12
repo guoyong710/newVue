@@ -11,7 +11,7 @@ import axios from "axios"
 axios.defaults.baseURL = "http://127.0.0.1:8888/api/private/v1/"
     //在把请求挂载到Vue之前设置一个拦截器,目的是需要授权的 API ，必须在请求头中使用 Authorization 字段提供 token 令牌
 axios.interceptors.request.use(config => {
-        console.log(config);
+        // console.log(config);
         config.headers.Authorization = window.sessionStorage.getItem("token")
             // 最后必须returnconfig
         return config
