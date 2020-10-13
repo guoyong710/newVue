@@ -272,7 +272,7 @@ export default {
     },
     // 监听 页码之值 改变的事件
     handleCurrentChange(newPage) {
-      console.log(newPage)
+      // console.log(newPage)
       this.queryInfo.pagenum = newPage
       this.getUserList()
     },
@@ -299,7 +299,7 @@ export default {
         // console.log(vali);
         if (!vali) return
         const { data: res } = await this.$axios.post('users', this.addForm)
-        console.log(res)
+        // console.log(res)
         if (res.meta.status !== 201) {
           return this.$message.error('用户添加失败')
         }
@@ -386,7 +386,7 @@ export default {
     // 展示分配的对话框
     async setRole(userInfo) {
       this.userInfo = userInfo
-      console.log(userInfo)
+      // console.log(userInfo)
       // 在展示对话框之前,获取所有角色的列表
     const {data:res} =  await this.$axios.get("roles")
 
