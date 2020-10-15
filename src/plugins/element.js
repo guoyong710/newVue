@@ -29,7 +29,10 @@ import {
     MessageBox,
     Tag,
     Tree,
-    Cascader
+    Cascader,
+    Alert,
+    Tabs,
+    TabPane
 
 } from "element-ui"
 
@@ -60,6 +63,9 @@ Vue.use(Dialog)
 Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 
 
 // 改在在vue中
