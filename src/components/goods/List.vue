@@ -145,7 +145,7 @@ export default {
     },
     //点击添加商品按钮进入添加商品页
     addGoods(){
-        this.$router.push('/goods/add')
+        this.$router.push('/add')
     }
   },
 }
